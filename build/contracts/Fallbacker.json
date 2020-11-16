@@ -1,0 +1,254 @@
+{
+  "contractName": "Fallbacker",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Fallback",
+      "type": "event"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[],\"name\":\"Fallback\",\"type\":\"event\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/george/synced/synced/openzeppelin/audits/test_fallback/contracts/Fallbackers.sol\":\"Fallbacker\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/george/synced/synced/openzeppelin/audits/test_fallback/contracts/Fallbackers.sol\":{\"keccak256\":\"0xf274c04f8425d62ae534417337df113436c22fa026640153f22bf71e30d72284\",\"urls\":[\"bzz-raw://83be2c7c91dbc950c3487206c1ac844586d29aad4c8f2ca2c10890b4045a86d8\",\"dweb:/ipfs/QmR2MSbhbSPBkeWCKwyDpgvSZfv6DwBjyWEFLSBDuVz79J\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603b80601d6000396000f3fe608060405200fea265627a7a723158207a9c2c3aed66ef7c3c4aec1a960180b98b2a35249dc2d132a6e30db89228a2ff64736f6c63430005100032",
+  "deployedBytecode": "0x608060405200fea265627a7a723158207a9c2c3aed66ef7c3c4aec1a960180b98b2a35249dc2d132a6e30db89228a2ff64736f6c63430005100032",
+  "sourceMap": "66:95:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:95:0;;;;;;;",
+  "deployedSourceMap": "66:95:0:-;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\ncontract Fallbacker {\n\n\tevent Fallback();\n\n\t// fallback\n\tfunction () external payable {\n\t\t\n\t}\n}\n\ncontract NonFallbacker {\n\n}\n",
+  "sourcePath": "/home/george/synced/synced/openzeppelin/audits/test_fallback/contracts/Fallbackers.sol",
+  "ast": {
+    "absolutePath": "/home/george/synced/synced/openzeppelin/audits/test_fallback/contracts/Fallbackers.sol",
+    "exportedSymbols": {
+      "Fallbacker": [
+        8
+      ],
+      "NonFallbacker": [
+        9
+      ]
+    },
+    "id": 10,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 8,
+        "linearizedBaseContracts": [
+          8
+        ],
+        "name": "Fallbacker",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3,
+            "name": "Fallback",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:2:0"
+            },
+            "src": "90:17:0"
+          },
+          {
+            "body": {
+              "id": 6,
+              "nodeType": "Block",
+              "src": "152:7:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 7,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "152:0:0"
+            },
+            "scope": 8,
+            "src": "123:36:0",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10,
+        "src": "66:95:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 9,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "NonFallbacker",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 10,
+        "src": "163:27:0"
+      }
+    ],
+    "src": "32:159:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/george/synced/synced/openzeppelin/audits/test_fallback/contracts/Fallbackers.sol",
+    "exportedSymbols": {
+      "Fallbacker": [
+        8
+      ],
+      "NonFallbacker": [
+        9
+      ]
+    },
+    "id": 10,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 8,
+        "linearizedBaseContracts": [
+          8
+        ],
+        "name": "Fallbacker",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3,
+            "name": "Fallback",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:2:0"
+            },
+            "src": "90:17:0"
+          },
+          {
+            "body": {
+              "id": 6,
+              "nodeType": "Block",
+              "src": "152:7:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 7,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "152:0:0"
+            },
+            "scope": 8,
+            "src": "123:36:0",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10,
+        "src": "66:95:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 9,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "NonFallbacker",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 10,
+        "src": "163:27:0"
+      }
+    ],
+    "src": "32:159:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.5",
+  "updatedAt": "2020-11-16T21:54:03.145Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
